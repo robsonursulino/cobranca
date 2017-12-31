@@ -12,7 +12,7 @@ $('#confirmacaoExclusaoModal').on('show.bs.modal', function (event) {
 	if (!action.endsWith('/')) {
 		action += '/';
 	}
-	form.attr('action', '/titulos/' + codigoTitulo);
+	form.attr('action', action + codigoTitulo);
 	
 	modal.find('.modal-body span').html('Tem certeza que deseja excluir o título <strong>' + descricaoTitulo + '</strong>?');
 });
